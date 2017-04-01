@@ -40,7 +40,6 @@ section .container,
 .abel,
 section h2,
 #menu h3,
-button-readmore
 {
     font-family: 'Abel', sans-serif;
 }
@@ -57,7 +56,10 @@ header
     clear: both;
     width: 100%;
     margin: 0 auto;
+    height:500px;
     padding: 0px 0;
+    background:url(../images/img_bar_outside.jpg) no-repeat;
+    background-size: cover;
 }
 
 section
@@ -102,11 +104,7 @@ section h2
             border-radius: 4px;
     background-color: #fdfcf6;
 }
-@media (max-width: 768px)
-{ #menu .container {
-      flex-direction: column;
-}
-}
+
 #menu i
 {
     font-size: 4.5rem;
@@ -169,3 +167,24 @@ footer
     color: #fff;
     background-color: #5F6658;
 }
+
+
+
+
+/*@media (max-width: 768px)*/
+/*{ #menu .container {*/
+/*      flex-direction: column;*/
+/*}*/
+/*}*/
+
+
+@media (max-width: 768px)
+{
+    .header{
+        height:250px;
+    }
+    #menu .container{
+        flex-direction: column;
+    }
+}
+
